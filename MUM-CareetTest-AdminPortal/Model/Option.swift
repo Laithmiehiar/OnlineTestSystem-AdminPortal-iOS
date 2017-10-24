@@ -9,13 +9,18 @@
 import Foundation
 
 struct Option {
-    let id: Int
+    let id: Int?
     let description: String
-    let answer: Bool
+    let answer: Bool?
     
     init(json: [String: Any]) {
         id = json["id"] as? Int ?? -1
         description = json["description"] as? String ?? ""
         answer = json["answer"] as? Bool ?? false
+    }
+    init(id: Int?, description: String, answer: Bool?){
+        self.id = id
+        self.description = description
+        self.answer = answer
     }
 }

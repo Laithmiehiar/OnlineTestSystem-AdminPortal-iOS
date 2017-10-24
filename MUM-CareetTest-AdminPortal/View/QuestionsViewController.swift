@@ -1,4 +1,4 @@
-//
+            //
 //  QuestionListViewController.swift
 //  MUM-CareetTest-AdminPortal
 //
@@ -9,13 +9,13 @@
 import UIKit
 
 class QuestionListViewController: UITableViewController{
-    @IBOutlet var questionViewModel: QuestionListViewModel!
+    @IBOutlet var questionViewModel: QuestionViewModel!
     var subCategory: SubCategory?
     
     override func viewDidLoad() {
         
         print(subCategory?.name ?? "asd")
-        questionViewModel.getQuestionList(subCatList:([(subCategory?.id)!])) {
+        questionViewModel.getQuestionList(subCatID:(subCategory?.id)!) {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
@@ -24,7 +24,7 @@ class QuestionListViewController: UITableViewController{
     
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return questionViewModel.numberOfRowsInSection(section: section)
+        return questionViewModel.numberOfItemToDisplay(in: section)
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -36,12 +36,12 @@ class QuestionListViewController: UITableViewController{
     
     
     func configureCell(cell: UITableViewCell, forRowaAtItemIndex indexPath: IndexPath){
-        cell.textLabel?.text = questionViewModel.itemForDisplay(at: indexPath)?.questionDesc
+        cell.textLabel?.text = questionViewModel.itemTodesplay(at: indexPath)?.questionDesc
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // get the question that has been clicked
-        let question = questionViewModel.itemForDisplay(at: indexPath)
+        let question = questionViewModel.itemTodesplay(at: indexPath)
           performSegue(withIdentifier: "showQuestionDetails", sender: question)
         
     }
@@ -52,9 +52,11 @@ class QuestionListViewController: UITableViewController{
             let destinationVC = segue.destination as! QuestionDetailsViewController
                 destinationVC.question = sender as? Question
             
-        }else if (segue.identifier == "showAddQuestion"){
+        }else if (segue.identifier == "AddQuestion"){
             let destinationVC = segue.destination as! AddQuestionViewController
-            destinationVC.subCategory = sender as? SubCategory
+            destinationVC.subCatID = self.subCategory?.id
+            destinationVC.viewModel = self.questionViewModel
+            
             
         }
     }

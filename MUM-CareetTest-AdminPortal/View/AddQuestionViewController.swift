@@ -8,82 +8,82 @@
 
 import UIKit
 
-class AddQuestionViewController: UIViewController, SSRadioButtonControllerDelegate{
+class AddQuestionViewController: UIViewController {
     
-    var subCategory: SubCategory!
-    @IBOutlet weak var answer1: SSRadioButton!
-    @IBOutlet weak var answer2: SSRadioButton!
-    @IBOutlet weak var answer3: SSRadioButton!
-    @IBOutlet weak var answer4: SSRadioButton!
-    @IBOutlet weak var answer5: SSRadioButton!
+    @IBOutlet weak var tableView: UITableView!
+    var viewModel: QuestionViewModel!
+    @IBOutlet weak var searchBar: UISearchBar!
+    var subCatID: Int!
     
-    @IBOutlet weak var categoryMap: UILabel!
-    @IBOutlet weak var questionText: UITextField!
-    
-    @IBOutlet weak var answerText1: UITextField!
-    @IBOutlet weak var answerText2: UITextField!
-    @IBOutlet weak var answerText3: UITextField!
-    @IBOutlet weak var answerText4: UITextField!
-    @IBOutlet weak var answerText5: UITextField!
-    
-    
-    var radioButtonController: SSRadioButtonsController?
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         
-        DispatchQueue.main.async {
-//            self.categoryMap.text = self.subCategory.name
+        tableView.dataSource = self
+        tableView.delegate = self
+        searchBar.delegate = self
+        
+        // Do any additional setup after loading the view.
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+    @IBAction func nextButton(_ sender: Any) {
+        performSegue(withIdentifier: "SubmitQuestion", sender: nil)
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if(segue.identifier == "SubmitQuestion"){
+            if let destinationVC = segue.destination as? SubmitQuestionViewController {
+                //destinationVC.subCategoryIds = self.subCategoriesList
+                destinationVC.viewModel = self.viewModel
+                destinationVC.questionBody = self.searchBar.text
+                destinationVC.subCatID = self.subCatID
+                
+            }
         }
-        
-        
-        radioButtonController = SSRadioButtonsController(buttons: answer1, answer2, answer3,answer4,answer5)
-        radioButtonController!.delegate = self
-        radioButtonController!.shouldLetDeSelect = true
         
         
     }
     
-    func didSelectButton(selectedButton: UIButton?) {
-        print(" \(String(describing: selectedButton?.tag))" )
-    }
-    
-    @IBAction func submitQuestion(_ sender: Any) {
-        //at least should be 4 answer and one question for the question
-        checkAnswerInput()
-        
-        
-        
-        
-    }
-    
-    func checkAnswerInput(){
-        
-        guard questionText.text != nil else{
-            questionText.attributedPlaceholder = NSAttributedString(string: "Please Type Question ",
-                                                                    attributes: [NSAttributedStringKey.foregroundColor: UIColor.red])
-            return
-        }
-        
-        guard answerText1.text != nil else{
-            answerText1.attributedPlaceholder = NSAttributedString(string: "Type Answer 1",
-                                                                   attributes: [NSAttributedStringKey.foregroundColor: UIColor.red])
-            return
-        }
-        guard answerText2.text != nil else{
-            answerText1.attributedPlaceholder = NSAttributedString(string: "Type Answer 3",
-                                                                   attributes: [NSAttributedStringKey.foregroundColor: UIColor.red])
-            return
-        }
-        guard answerText3.text != nil else{
-            answerText1.attributedPlaceholder = NSAttributedString(string: "Type Answer 3",
-                                                                   attributes: [NSAttributedStringKey.foregroundColor: UIColor.red])
-            return
-        }
-        guard answerText4.text != nil else{
-            answerText1.attributedPlaceholder = NSAttributedString(string: "Type Answer 4",
-                                                                   attributes: [NSAttributedStringKey.foregroundColor: UIColor.red])
-            return
-        }
-    }
     
 }
+
+extension AddQuestionViewController: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.numberOfItemForDisplaySearch()
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SearchQuestionCell", for: indexPath)
+        
+        cell.textLabel?.text = viewModel.itemToDispalyInSearchTable(at: indexPath)
+        
+        return cell
+    }
+}
+
+extension AddQuestionViewController: UISearchBarDelegate{
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        guard let text = searchBar.text else {
+            print("No Text Typped")
+            return
+        }
+        print("Text Change")
+        
+        viewModel.updateSerchQuestion(with: text)
+        print(viewModel.searchQuestions)
+        tableView.reloadData()
+    }
+}
+

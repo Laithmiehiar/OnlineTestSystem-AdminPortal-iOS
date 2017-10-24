@@ -25,10 +25,9 @@ class CategoryListViewController: UITableViewController{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "questionsListSeguee"){
             print(segue.identifier!)
-            let nav = segue.destination as! UINavigationController
-            if let destinationVC = nav.topViewController as? QuestionListViewController{
+//            let nav = segue.destination as! UINavigationController
+            let destinationVC = segue.destination as! QuestionListViewController
                 destinationVC.subCategory = sender as? SubCategory
-            }
         }
         
     }

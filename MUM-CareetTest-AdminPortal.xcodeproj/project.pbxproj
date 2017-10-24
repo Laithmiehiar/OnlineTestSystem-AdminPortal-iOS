@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		AC1D47811F96EF2F0043C317 /* QuestionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1D47801F96EF2E0043C317 /* QuestionDetailsViewController.swift */; };
 		AC1D47831F96EF7D0043C317 /* QuestionDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1D47821F96EF7D0043C317 /* QuestionDetailsViewModel.swift */; };
-		AC20ED261F940BF9009E8161 /* QuestionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC20ED251F940BF9009E8161 /* QuestionListViewController.swift */; };
-		AC20ED281F940C23009E8161 /* QuestionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC20ED271F940C23009E8161 /* QuestionListViewModel.swift */; };
+		AC20ED261F940BF9009E8161 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC20ED251F940BF9009E8161 /* QuestionsViewController.swift */; };
 		AC3500B21F9C41C3000129A4 /* StudentResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3500B11F9C41C3000129A4 /* StudentResultViewController.swift */; };
 		AC3500B41F9C42CC000129A4 /* StudentResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3500B31F9C42CC000129A4 /* StudentResultViewModel.swift */; };
 		AC3500B81F9C4A27000129A4 /* StudentResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3500B71F9C4A27000129A4 /* StudentResultModel.swift */; };
@@ -32,6 +31,8 @@
 		AC9102CE1F8C05AE00232D2F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9102CD1F8C05AE00232D2F /* Constant.swift */; };
 		AC9102D01F8C12A400232D2F /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9102CF1F8C12A400232D2F /* FancyView.swift */; };
 		AC9102D21F8C756000232D2F /* CornerRadiusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9102D11F8C756000232D2F /* CornerRadiusView.swift */; };
+		AC9A8FDB1F9F36A500ED3592 /* QuestionChoiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9A8FDA1F9F36A500ED3592 /* QuestionChoiceTableViewCell.swift */; };
+		AC9A8FDD1F9F394300ED3592 /* DetailsQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9A8FDC1F9F394300ED3592 /* DetailsQuestionsViewController.swift */; };
 		ACBF56B41F8EAFE6001AE63F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF56B31F8EAFE6001AE63F /* LoginViewModel.swift */; };
 		ACBF56B61F90735A001AE63F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF56B51F90735A001AE63F /* MenuViewController.swift */; };
 		ACBF56B81F90737F001AE63F /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF56B71F90737F001AE63F /* MenuViewModel.swift */; };
@@ -42,6 +43,10 @@
 		ACBF56C41F93EF08001AE63F /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF56C31F93EF08001AE63F /* Category.swift */; };
 		ACC0DE081F9F10B600250511 /* AssignmentListCustomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0DE071F9F10B600250511 /* AssignmentListCustomeCell.swift */; };
 		ACC0DE0A1F9F125E00250511 /* AssignmentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0DE091F9F125E00250511 /* AssignmentListViewController.swift */; };
+		ACC0DE0C1F9F2F2900250511 /* SubmitQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0DE0B1F9F2F2900250511 /* SubmitQuestionViewController.swift */; };
+		ACC0DE0E1F9F2F7700250511 /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0DE0D1F9F2F7700250511 /* QuestionViewModel.swift */; };
+		ACC0DE101F9F2FE400250511 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0DE0F1F9F2FE400250511 /* Result.swift */; };
+		ACC0DE121F9F300600250511 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0DE111F9F300600250511 /* Match.swift */; };
 		ACD8DAD81F97E3DB009A9484 /* AddQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8DAD71F97E3DA009A9484 /* AddQuestionViewController.swift */; };
 		ACD8DADA1F97E447009A9484 /* AddQuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8DAD91F97E447009A9484 /* AddQuestionViewModel.swift */; };
 		ACFF5F981F99338900DAA8D5 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF5F971F99338900DAA8D5 /* Student.swift */; };
@@ -52,8 +57,7 @@
 /* Begin PBXFileReference section */
 		AC1D47801F96EF2E0043C317 /* QuestionDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailsViewController.swift; sourceTree = "<group>"; };
 		AC1D47821F96EF7D0043C317 /* QuestionDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailsViewModel.swift; sourceTree = "<group>"; };
-		AC20ED251F940BF9009E8161 /* QuestionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListViewController.swift; sourceTree = "<group>"; };
-		AC20ED271F940C23009E8161 /* QuestionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListViewModel.swift; sourceTree = "<group>"; };
+		AC20ED251F940BF9009E8161 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		AC3500B11F9C41C3000129A4 /* StudentResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentResultViewController.swift; sourceTree = "<group>"; };
 		AC3500B31F9C42CC000129A4 /* StudentResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentResultViewModel.swift; sourceTree = "<group>"; };
 		AC3500B71F9C4A27000129A4 /* StudentResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentResultModel.swift; sourceTree = "<group>"; };
@@ -77,6 +81,8 @@
 		AC9102CD1F8C05AE00232D2F /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		AC9102CF1F8C12A400232D2F /* FancyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		AC9102D11F8C756000232D2F /* CornerRadiusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusView.swift; sourceTree = "<group>"; };
+		AC9A8FDA1F9F36A500ED3592 /* QuestionChoiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionChoiceTableViewCell.swift; sourceTree = "<group>"; };
+		AC9A8FDC1F9F394300ED3592 /* DetailsQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsQuestionsViewController.swift; sourceTree = "<group>"; };
 		ACBF56B31F8EAFE6001AE63F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		ACBF56B51F90735A001AE63F /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		ACBF56B71F90737F001AE63F /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
@@ -87,6 +93,10 @@
 		ACBF56C31F93EF08001AE63F /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		ACC0DE071F9F10B600250511 /* AssignmentListCustomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentListCustomeCell.swift; sourceTree = "<group>"; };
 		ACC0DE091F9F125E00250511 /* AssignmentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentListViewController.swift; sourceTree = "<group>"; };
+		ACC0DE0B1F9F2F2900250511 /* SubmitQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitQuestionViewController.swift; sourceTree = "<group>"; };
+		ACC0DE0D1F9F2F7700250511 /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
+		ACC0DE0F1F9F2FE400250511 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		ACC0DE111F9F300600250511 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		ACD8DAD71F97E3DA009A9484 /* AddQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionViewController.swift; sourceTree = "<group>"; };
 		ACD8DAD91F97E447009A9484 /* AddQuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionViewModel.swift; sourceTree = "<group>"; };
 		ACFF5F971F99338900DAA8D5 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
@@ -139,19 +149,22 @@
 		AC9102C81F8C055500232D2F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AC9102CF1F8C12A400232D2F /* FancyView.swift */,
+				ACFF5F991F996C1C00DAA8D5 /* AddNewStudentViewController.swift */,
+				ACD8DAD71F97E3DA009A9484 /* AddQuestionViewController.swift */,
+				ACC0DE091F9F125E00250511 /* AssignmentListViewController.swift */,
+				ACBF56B91F92A37A001AE63F /* CategoryListViewController.swift */,
 				AC9102D11F8C756000232D2F /* CornerRadiusView.swift */,
+				AC9102CF1F8C12A400232D2F /* FancyView.swift */,
+				AC597FAE1F9862B90048A97D /* SSRadioButton.swift */,
 				AC9102B51F8C033600232D2F /* LoginViewController.swift */,
 				ACBF56B51F90735A001AE63F /* MenuViewController.swift */,
-				ACBF56B91F92A37A001AE63F /* CategoryListViewController.swift */,
-				ACBF56BB1F92A391001AE63F /* StudentListViewController.swift */,
-				AC20ED251F940BF9009E8161 /* QuestionListViewController.swift */,
 				AC1D47801F96EF2E0043C317 /* QuestionDetailsViewController.swift */,
-				ACD8DAD71F97E3DA009A9484 /* AddQuestionViewController.swift */,
-				AC597FAE1F9862B90048A97D /* SSRadioButton.swift */,
-				ACFF5F991F996C1C00DAA8D5 /* AddNewStudentViewController.swift */,
+				AC20ED251F940BF9009E8161 /* QuestionsViewController.swift */,
+				ACBF56BB1F92A391001AE63F /* StudentListViewController.swift */,
 				AC3500B11F9C41C3000129A4 /* StudentResultViewController.swift */,
-				ACC0DE091F9F125E00250511 /* AssignmentListViewController.swift */,
+				ACC0DE0B1F9F2F2900250511 /* SubmitQuestionViewController.swift */,
+				AC9A8FDA1F9F36A500ED3592 /* QuestionChoiceTableViewCell.swift */,
+				AC9A8FDC1F9F394300ED3592 /* DetailsQuestionsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -159,11 +172,11 @@
 		AC9102C91F8C056100232D2F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				ACC0DE0D1F9F2F7700250511 /* QuestionViewModel.swift */,
 				ACBF56B31F8EAFE6001AE63F /* LoginViewModel.swift */,
 				ACBF56B71F90737F001AE63F /* MenuViewModel.swift */,
 				ACBF56BD1F92A3AF001AE63F /* StudentListViewModel.swift */,
 				ACBF56BF1F92A3C0001AE63F /* CategoryListViewModel.swift */,
-				AC20ED271F940C23009E8161 /* QuestionListViewModel.swift */,
 				AC1D47821F96EF7D0043C317 /* QuestionDetailsViewModel.swift */,
 				ACD8DAD91F97E447009A9484 /* AddQuestionViewModel.swift */,
 				AC597FAC1F9861B60048A97D /* SSRadioButtonsController.swift */,
@@ -186,6 +199,8 @@
 				AC5FDA721F9E5C3E00EC88DC /* StudentResultCell.swift */,
 				AC5FDA741F9F04F000EC88DC /* Assignment.swift */,
 				ACC0DE071F9F10B600250511 /* AssignmentListCustomeCell.swift */,
+				ACC0DE0F1F9F2FE400250511 /* Result.swift */,
+				ACC0DE111F9F300600250511 /* Match.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -287,16 +302,19 @@
 				ACD8DADA1F97E447009A9484 /* AddQuestionViewModel.swift in Sources */,
 				AC9102B61F8C033600232D2F /* LoginViewController.swift in Sources */,
 				AC547C5D1F8D5B5500495EB3 /* SubCategory.swift in Sources */,
+				ACC0DE101F9F2FE400250511 /* Result.swift in Sources */,
 				AC547C5F1F8D5F6700495EB3 /* Option.swift in Sources */,
 				AC3500B21F9C41C3000129A4 /* StudentResultViewController.swift in Sources */,
 				AC5FDA751F9F04F400EC88DC /* Assignment.swift in Sources */,
 				ACFF5F9A1F996C1D00DAA8D5 /* AddNewStudentViewController.swift in Sources */,
+				ACC0DE0E1F9F2F7700250511 /* QuestionViewModel.swift in Sources */,
 				ACBF56C41F93EF08001AE63F /* Category.swift in Sources */,
 				AC9102D01F8C12A400232D2F /* FancyView.swift in Sources */,
 				ACBF56BE1F92A3AF001AE63F /* StudentListViewModel.swift in Sources */,
 				AC9102B41F8C033600232D2F /* AppDelegate.swift in Sources */,
 				ACC0DE0A1F9F125E00250511 /* AssignmentListViewController.swift in Sources */,
 				ACBF56C01F92A3C0001AE63F /* CategoryListViewModel.swift in Sources */,
+				AC9A8FDB1F9F36A500ED3592 /* QuestionChoiceTableViewCell.swift in Sources */,
 				AC9102BC1F8C033600232D2F /* MUM_CareetTest_AdminPortal.xcdatamodeld in Sources */,
 				ACFF5F981F99338900DAA8D5 /* Student.swift in Sources */,
 				AC3500B81F9C4A27000129A4 /* StudentResultModel.swift in Sources */,
@@ -305,16 +323,18 @@
 				ACBF56B61F90735A001AE63F /* MenuViewController.swift in Sources */,
 				ACFF5F9C1F996C3800DAA8D5 /* AddNewStudentViewModel.swift in Sources */,
 				ACBF56B41F8EAFE6001AE63F /* LoginViewModel.swift in Sources */,
+				AC9A8FDD1F9F394300ED3592 /* DetailsQuestionsViewController.swift in Sources */,
 				ACC0DE081F9F10B600250511 /* AssignmentListCustomeCell.swift in Sources */,
 				AC5FDA711F9E4E2200EC88DC /* StudentGrades.swift in Sources */,
 				AC547C591F8D58E200495EB3 /* Question.swift in Sources */,
 				ACD8DAD81F97E3DB009A9484 /* AddQuestionViewController.swift in Sources */,
-				AC20ED281F940C23009E8161 /* QuestionListViewModel.swift in Sources */,
 				ACBF56BC1F92A391001AE63F /* StudentListViewController.swift in Sources */,
+				ACC0DE121F9F300600250511 /* Match.swift in Sources */,
 				AC9102CE1F8C05AE00232D2F /* Constant.swift in Sources */,
 				AC1D47811F96EF2F0043C317 /* QuestionDetailsViewController.swift in Sources */,
-				AC20ED261F940BF9009E8161 /* QuestionListViewController.swift in Sources */,
+				AC20ED261F940BF9009E8161 /* QuestionsViewController.swift in Sources */,
 				AC1D47831F96EF7D0043C317 /* QuestionDetailsViewModel.swift in Sources */,
+				ACC0DE0C1F9F2F2900250511 /* SubmitQuestionViewController.swift in Sources */,
 				AC9102D21F8C756000232D2F /* CornerRadiusView.swift in Sources */,
 				AC3500B41F9C42CC000129A4 /* StudentResultViewModel.swift in Sources */,
 				ACBF56BA1F92A37A001AE63F /* CategoryListViewController.swift in Sources */,

@@ -33,7 +33,7 @@ class QuestionDetailsViewController: UIViewController, UITableViewDataSource, UI
     }
     
     func configureCell(cell: UITableViewCell, forRowaAtItemIndex indexPath: IndexPath){
-        if question.options[indexPath.row].answer {
+        if question.options[indexPath.row].answer! {
             cell.textLabel?.textColor = UIColor.red
         }
         cell.textLabel?.text = self.question.options[indexPath.row].description

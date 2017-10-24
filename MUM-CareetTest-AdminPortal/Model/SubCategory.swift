@@ -10,7 +10,7 @@ import Foundation
 
 struct SubCategory {
     var id: Int
-    var name: String
+    var name: String?
     var enabled: Bool
     var categoryId: Int
     var questionCount: Int
@@ -23,5 +23,13 @@ struct SubCategory {
         categoryId = json["categoryId"] as? Int ?? -1
         questionCount = json["questionCount"] as? Int ?? -1
         category = json["category"] as? String ?? ""
+    }
+    init(id: Int, name: String?) {
+        self.id = id
+        self.name = name
+        enabled = false
+        categoryId = -1
+        questionCount = 0
+        category =  ""
     }
 }

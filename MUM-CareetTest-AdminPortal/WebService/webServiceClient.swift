@@ -132,7 +132,96 @@ extension webServiceClient {
     }
     
 }
+extension webServiceClient {
+    func fetchQuestions(for subCat: Int, completion: @escaping([Question]?) -> Void) {
+        guard let url = URL(string: BASE_URL2 + "getAllQuestionForSubCat") else {
+            print("Error unwrapping URL")
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.httpBody = "subCatId=\(subCat)".data(using: .utf8)
+        
+        let session = URLSession.shared
+        let dataTask = session.dataTask(with: request) { (data, response, error) in
+            guard let unwrappeData = data else {
+                print("Error geting data")
+                return
+            }
+            
+            print(unwrappeData.description)
+            
+            do{
+                if let responseJSON = try JSONSerialization.jsonObject(with: unwrappeData, options: .allowFragments) as? [[String: Any]] {
+                    var questions = [Question]()
+                    for response in responseJSON {
+                        questions.append(Question(json: response))
+                    }
+                    completion(questions)
+                    print(questions)
+                }
+            }catch{
+                completion(nil)
+                print("Error getting API data: \(error.localizedDescription)")
+            }
+        }
+        dataTask.resume()
+    }
+    
+}
 
+extension webServiceClient {
+    func addQuestion(jsonData: Data?, completion: @escaping(Result?) -> Void) {
+        guard let data = jsonData else{
+            return
+        }
+        guard let url = URL(string: BASE_URL2+addQuestionRef) else {
+            print("Error unwrapping URL")
+            return
+        }
+        
+        print("Going to Submit Result")
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.httpBody = data
+        
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        
+        //print(data.)
+        
+        let session = URLSession.shared
+        let dataTask = session.dataTask(with: request)  { (data, response, error) in
+            guard let res = response as? HTTPURLResponse else {
+                return
+            }
+            if res.statusCode >= 200 && res.statusCode <= 299 {
+                print("success")
+            }
+            
+            guard let unwrappedData = data else{
+                print("No Data Found")
+                return
+            }
+            
+            do{
+                if let responseJSON = try JSONSerialization.jsonObject(with: unwrappedData, options: .allowFragments) as? [String: Any] {
+                    let result = Result(json: responseJSON)
+                    completion(result)
+                }
+                
+            }catch{
+                completion(nil)
+                print("Error getting API Data \(error.localizedDescription)")
+                
+            }
+            
+        }
+        dataTask.resume()
+    }
+}
 extension webServiceClient {
     func fetchAllStudent(completion: @escaping([Student]?) -> Void) {
         guard let url = URL(string: BASE_URL2+getAllStudent) else {

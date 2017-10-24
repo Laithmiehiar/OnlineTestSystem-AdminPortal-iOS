@@ -9,7 +9,7 @@
 import Foundation
 struct Question {
     
-    var id: Int
+    var id: Int?
     var questionDesc: String
     var options: [Option] = []
 //    var subCategoryId: Int
@@ -21,5 +21,10 @@ struct Question {
         for choice in choicesJson{
             options.append(Option(json: choice))
         }
+    }
+    init(description: String, id: Int?, choices: [Option]) {
+        self.questionDesc = description
+        self.id = id
+        self.options = choices
     }
 }
