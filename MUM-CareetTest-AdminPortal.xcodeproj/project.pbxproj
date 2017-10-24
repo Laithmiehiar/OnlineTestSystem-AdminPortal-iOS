@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC1D47811F96EF2F0043C317 /* QuestionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1D47801F96EF2E0043C317 /* QuestionDetailsViewController.swift */; };
+		AC1D47831F96EF7D0043C317 /* QuestionDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1D47821F96EF7D0043C317 /* QuestionDetailsViewModel.swift */; };
+		AC20ED261F940BF9009E8161 /* QuestionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC20ED251F940BF9009E8161 /* QuestionListViewController.swift */; };
+		AC20ED281F940C23009E8161 /* QuestionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC20ED271F940C23009E8161 /* QuestionListViewModel.swift */; };
+		AC3500B21F9C41C3000129A4 /* StudentResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3500B11F9C41C3000129A4 /* StudentResultViewController.swift */; };
+		AC3500B41F9C42CC000129A4 /* StudentResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3500B31F9C42CC000129A4 /* StudentResultViewModel.swift */; };
+		AC3500B81F9C4A27000129A4 /* StudentResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3500B71F9C4A27000129A4 /* StudentResultModel.swift */; };
+		AC547C571F8D2D0300495EB3 /* webServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC547C561F8D2D0300495EB3 /* webServiceClient.swift */; };
+		AC547C591F8D58E200495EB3 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC547C581F8D58E200495EB3 /* Question.swift */; };
+		AC547C5D1F8D5B5500495EB3 /* SubCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC547C5C1F8D5B5500495EB3 /* SubCategory.swift */; };
+		AC547C5F1F8D5F6700495EB3 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC547C5E1F8D5F6700495EB3 /* Option.swift */; };
+		AC597FAD1F9861B60048A97D /* SSRadioButtonsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC597FAC1F9861B60048A97D /* SSRadioButtonsController.swift */; };
+		AC597FAF1F9862B90048A97D /* SSRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC597FAE1F9862B90048A97D /* SSRadioButton.swift */; };
+		AC5FDA711F9E4E2200EC88DC /* StudentGrades.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5FDA701F9E4E2200EC88DC /* StudentGrades.swift */; };
+		AC5FDA731F9E5C3E00EC88DC /* StudentResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5FDA721F9E5C3E00EC88DC /* StudentResultCell.swift */; };
+		AC9102B41F8C033600232D2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9102B31F8C033600232D2F /* AppDelegate.swift */; };
+		AC9102B61F8C033600232D2F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9102B51F8C033600232D2F /* LoginViewController.swift */; };
+		AC9102B91F8C033600232D2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9102B71F8C033600232D2F /* Main.storyboard */; };
+		AC9102BC1F8C033600232D2F /* MUM_CareetTest_AdminPortal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC9102BA1F8C033600232D2F /* MUM_CareetTest_AdminPortal.xcdatamodeld */; };
+		AC9102BE1F8C033600232D2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9102BD1F8C033600232D2F /* Assets.xcassets */; };
+		AC9102C11F8C033600232D2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9102BF1F8C033600232D2F /* LaunchScreen.storyboard */; };
+		AC9102CE1F8C05AE00232D2F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9102CD1F8C05AE00232D2F /* Constant.swift */; };
+		AC9102D01F8C12A400232D2F /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9102CF1F8C12A400232D2F /* FancyView.swift */; };
+		AC9102D21F8C756000232D2F /* CornerRadiusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9102D11F8C756000232D2F /* CornerRadiusView.swift */; };
+		ACBF56B41F8EAFE6001AE63F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF56B31F8EAFE6001AE63F /* LoginViewModel.swift */; };
+		ACBF56B61F90735A001AE63F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF56B51F90735A001AE63F /* MenuViewController.swift */; };
+		ACBF56B81F90737F001AE63F /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF56B71F90737F001AE63F /* MenuViewModel.swift */; };
+		ACBF56BA1F92A37A001AE63F /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF56B91F92A37A001AE63F /* CategoryListViewController.swift */; };
+		ACBF56BC1F92A391001AE63F /* StudentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF56BB1F92A391001AE63F /* StudentListViewController.swift */; };
+		ACBF56BE1F92A3AF001AE63F /* StudentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF56BD1F92A3AF001AE63F /* StudentListViewModel.swift */; };
+		ACBF56C01F92A3C0001AE63F /* CategoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF56BF1F92A3C0001AE63F /* CategoryListViewModel.swift */; };
+		ACBF56C41F93EF08001AE63F /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF56C31F93EF08001AE63F /* Category.swift */; };
+		ACD8DAD81F97E3DB009A9484 /* AddQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8DAD71F97E3DA009A9484 /* AddQuestionViewController.swift */; };
+		ACD8DADA1F97E447009A9484 /* AddQuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8DAD91F97E447009A9484 /* AddQuestionViewModel.swift */; };
+		ACFF5F981F99338900DAA8D5 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF5F971F99338900DAA8D5 /* Student.swift */; };
+		ACFF5F9A1F996C1D00DAA8D5 /* AddNewStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF5F991F996C1C00DAA8D5 /* AddNewStudentViewController.swift */; };
+		ACFF5F9C1F996C3800DAA8D5 /* AddNewStudentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF5F9B1F996C3800DAA8D5 /* AddNewStudentViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AC1D47801F96EF2E0043C317 /* QuestionDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailsViewController.swift; sourceTree = "<group>"; };
+		AC1D47821F96EF7D0043C317 /* QuestionDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailsViewModel.swift; sourceTree = "<group>"; };
+		AC20ED251F940BF9009E8161 /* QuestionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListViewController.swift; sourceTree = "<group>"; };
+		AC20ED271F940C23009E8161 /* QuestionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListViewModel.swift; sourceTree = "<group>"; };
+		AC3500B11F9C41C3000129A4 /* StudentResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentResultViewController.swift; sourceTree = "<group>"; };
+		AC3500B31F9C42CC000129A4 /* StudentResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentResultViewModel.swift; sourceTree = "<group>"; };
+		AC3500B71F9C4A27000129A4 /* StudentResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentResultModel.swift; sourceTree = "<group>"; };
+		AC547C561F8D2D0300495EB3 /* webServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webServiceClient.swift; sourceTree = "<group>"; };
+		AC547C581F8D58E200495EB3 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		AC547C5C1F8D5B5500495EB3 /* SubCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategory.swift; sourceTree = "<group>"; };
+		AC547C5E1F8D5F6700495EB3 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		AC597FAC1F9861B60048A97D /* SSRadioButtonsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSRadioButtonsController.swift; sourceTree = "<group>"; };
+		AC597FAE1F9862B90048A97D /* SSRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSRadioButton.swift; sourceTree = "<group>"; };
+		AC5FDA701F9E4E2200EC88DC /* StudentGrades.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentGrades.swift; sourceTree = "<group>"; };
+		AC5FDA721F9E5C3E00EC88DC /* StudentResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentResultCell.swift; sourceTree = "<group>"; };
+		AC9102B01F8C033600232D2F /* MUM-CareetTest-AdminPortal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MUM-CareetTest-AdminPortal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC9102B31F8C033600232D2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC9102B51F8C033600232D2F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AC9102B81F8C033600232D2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC9102BB1F8C033600232D2F /* MUM_CareetTest_AdminPortal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MUM_CareetTest_AdminPortal.xcdatamodel; sourceTree = "<group>"; };
+		AC9102BD1F8C033600232D2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC9102C01F8C033600232D2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC9102C21F8C033600232D2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC9102CD1F8C05AE00232D2F /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		AC9102CF1F8C12A400232D2F /* FancyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		AC9102D11F8C756000232D2F /* CornerRadiusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusView.swift; sourceTree = "<group>"; };
+		ACBF56B31F8EAFE6001AE63F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		ACBF56B51F90735A001AE63F /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		ACBF56B71F90737F001AE63F /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		ACBF56B91F92A37A001AE63F /* CategoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
+		ACBF56BB1F92A391001AE63F /* StudentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewController.swift; sourceTree = "<group>"; };
+		ACBF56BD1F92A3AF001AE63F /* StudentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewModel.swift; sourceTree = "<group>"; };
+		ACBF56BF1F92A3C0001AE63F /* CategoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewModel.swift; sourceTree = "<group>"; };
+		ACBF56C31F93EF08001AE63F /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		ACD8DAD71F97E3DA009A9484 /* AddQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionViewController.swift; sourceTree = "<group>"; };
+		ACD8DAD91F97E447009A9484 /* AddQuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionViewModel.swift; sourceTree = "<group>"; };
+		ACFF5F971F99338900DAA8D5 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		ACFF5F991F996C1C00DAA8D5 /* AddNewStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewStudentViewController.swift; sourceTree = "<group>"; };
+		ACFF5F9B1F996C3800DAA8D5 /* AddNewStudentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewStudentViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC9102AD1F8C033600232D2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC9102A71F8C033500232D2F = {
+			isa = PBXGroup;
+			children = (
+				AC9102B21F8C033600232D2F /* MUM-CareetTest-AdminPortal */,
+				AC9102B11F8C033600232D2F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC9102B11F8C033600232D2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC9102B01F8C033600232D2F /* MUM-CareetTest-AdminPortal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC9102B21F8C033600232D2F /* MUM-CareetTest-AdminPortal */ = {
+			isa = PBXGroup;
+			children = (
+				AC9102C81F8C055500232D2F /* View */,
+				AC9102CA1F8C056B00232D2F /* Model */,
+				AC9102C91F8C056100232D2F /* ViewModel */,
+				AC9102CB1F8C057100232D2F /* WebService */,
+				AC9102CC1F8C058700232D2F /* SupportFiles */,
+				AC9102B71F8C033600232D2F /* Main.storyboard */,
+				AC9102C21F8C033600232D2F /* Info.plist */,
+				AC9102BA1F8C033600232D2F /* MUM_CareetTest_AdminPortal.xcdatamodeld */,
+			);
+			path = "MUM-CareetTest-AdminPortal";
+			sourceTree = "<group>";
+		};
+		AC9102C81F8C055500232D2F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC9102CF1F8C12A400232D2F /* FancyView.swift */,
+				AC9102D11F8C756000232D2F /* CornerRadiusView.swift */,
+				AC9102B51F8C033600232D2F /* LoginViewController.swift */,
+				ACBF56B51F90735A001AE63F /* MenuViewController.swift */,
+				ACBF56B91F92A37A001AE63F /* CategoryListViewController.swift */,
+				ACBF56BB1F92A391001AE63F /* StudentListViewController.swift */,
+				AC20ED251F940BF9009E8161 /* QuestionListViewController.swift */,
+				AC1D47801F96EF2E0043C317 /* QuestionDetailsViewController.swift */,
+				ACD8DAD71F97E3DA009A9484 /* AddQuestionViewController.swift */,
+				AC597FAE1F9862B90048A97D /* SSRadioButton.swift */,
+				ACFF5F991F996C1C00DAA8D5 /* AddNewStudentViewController.swift */,
+				AC3500B11F9C41C3000129A4 /* StudentResultViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC9102C91F8C056100232D2F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ACBF56B31F8EAFE6001AE63F /* LoginViewModel.swift */,
+				ACBF56B71F90737F001AE63F /* MenuViewModel.swift */,
+				ACBF56BD1F92A3AF001AE63F /* StudentListViewModel.swift */,
+				ACBF56BF1F92A3C0001AE63F /* CategoryListViewModel.swift */,
+				AC20ED271F940C23009E8161 /* QuestionListViewModel.swift */,
+				AC1D47821F96EF7D0043C317 /* QuestionDetailsViewModel.swift */,
+				ACD8DAD91F97E447009A9484 /* AddQuestionViewModel.swift */,
+				AC597FAC1F9861B60048A97D /* SSRadioButtonsController.swift */,
+				ACFF5F9B1F996C3800DAA8D5 /* AddNewStudentViewModel.swift */,
+				AC3500B31F9C42CC000129A4 /* StudentResultViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AC9102CA1F8C056B00232D2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC547C581F8D58E200495EB3 /* Question.swift */,
+				AC547C5C1F8D5B5500495EB3 /* SubCategory.swift */,
+				AC547C5E1F8D5F6700495EB3 /* Option.swift */,
+				ACBF56C31F93EF08001AE63F /* Category.swift */,
+				ACFF5F971F99338900DAA8D5 /* Student.swift */,
+				AC3500B71F9C4A27000129A4 /* StudentResultModel.swift */,
+				AC5FDA701F9E4E2200EC88DC /* StudentGrades.swift */,
+				AC5FDA721F9E5C3E00EC88DC /* StudentResultCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC9102CB1F8C057100232D2F /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				AC547C561F8D2D0300495EB3 /* webServiceClient.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		AC9102CC1F8C058700232D2F /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AC9102CD1F8C05AE00232D2F /* Constant.swift */,
+				AC9102B31F8C033600232D2F /* AppDelegate.swift */,
+				AC9102BD1F8C033600232D2F /* Assets.xcassets */,
+				AC9102BF1F8C033600232D2F /* LaunchScreen.storyboard */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC9102AF1F8C033600232D2F /* MUM-CareetTest-AdminPortal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC9102C51F8C033600232D2F /* Build configuration list for PBXNativeTarget "MUM-CareetTest-AdminPortal" */;
+			buildPhases = (
+				AC9102AC1F8C033600232D2F /* Sources */,
+				AC9102AD1F8C033600232D2F /* Frameworks */,
+				AC9102AE1F8C033600232D2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MUM-CareetTest-AdminPortal";
+			productName = "MUM-CareetTest-AdminPortal";
+			productReference = AC9102B01F8C033600232D2F /* MUM-CareetTest-AdminPortal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC9102A81F8C033500232D2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Laith Miehiar";
+				TargetAttributes = {
+					AC9102AF1F8C033600232D2F = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AC9102AB1F8C033500232D2F /* Build configuration list for PBXProject "MUM-CareetTest-AdminPortal" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC9102A71F8C033500232D2F;
+			productRefGroup = AC9102B11F8C033600232D2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC9102AF1F8C033600232D2F /* MUM-CareetTest-AdminPortal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC9102AE1F8C033600232D2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC9102C11F8C033600232D2F /* LaunchScreen.storyboard in Resources */,
+				AC9102BE1F8C033600232D2F /* Assets.xcassets in Resources */,
+				AC9102B91F8C033600232D2F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC9102AC1F8C033600232D2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC547C571F8D2D0300495EB3 /* webServiceClient.swift in Sources */,
+				AC597FAD1F9861B60048A97D /* SSRadioButtonsController.swift in Sources */,
+				ACBF56B81F90737F001AE63F /* MenuViewModel.swift in Sources */,
+				ACD8DADA1F97E447009A9484 /* AddQuestionViewModel.swift in Sources */,
+				AC9102B61F8C033600232D2F /* LoginViewController.swift in Sources */,
+				AC547C5D1F8D5B5500495EB3 /* SubCategory.swift in Sources */,
+				AC547C5F1F8D5F6700495EB3 /* Option.swift in Sources */,
+				AC3500B21F9C41C3000129A4 /* StudentResultViewController.swift in Sources */,
+				ACFF5F9A1F996C1D00DAA8D5 /* AddNewStudentViewController.swift in Sources */,
+				ACBF56C41F93EF08001AE63F /* Category.swift in Sources */,
+				AC9102D01F8C12A400232D2F /* FancyView.swift in Sources */,
+				ACBF56BE1F92A3AF001AE63F /* StudentListViewModel.swift in Sources */,
+				AC9102B41F8C033600232D2F /* AppDelegate.swift in Sources */,
+				ACBF56C01F92A3C0001AE63F /* CategoryListViewModel.swift in Sources */,
+				AC9102BC1F8C033600232D2F /* MUM_CareetTest_AdminPortal.xcdatamodeld in Sources */,
+				ACFF5F981F99338900DAA8D5 /* Student.swift in Sources */,
+				AC3500B81F9C4A27000129A4 /* StudentResultModel.swift in Sources */,
+				AC597FAF1F9862B90048A97D /* SSRadioButton.swift in Sources */,
+				AC5FDA731F9E5C3E00EC88DC /* StudentResultCell.swift in Sources */,
+				ACBF56B61F90735A001AE63F /* MenuViewController.swift in Sources */,
+				ACFF5F9C1F996C3800DAA8D5 /* AddNewStudentViewModel.swift in Sources */,
+				ACBF56B41F8EAFE6001AE63F /* LoginViewModel.swift in Sources */,
+				AC5FDA711F9E4E2200EC88DC /* StudentGrades.swift in Sources */,
+				AC547C591F8D58E200495EB3 /* Question.swift in Sources */,
+				ACD8DAD81F97E3DB009A9484 /* AddQuestionViewController.swift in Sources */,
+				AC20ED281F940C23009E8161 /* QuestionListViewModel.swift in Sources */,
+				ACBF56BC1F92A391001AE63F /* StudentListViewController.swift in Sources */,
+				AC9102CE1F8C05AE00232D2F /* Constant.swift in Sources */,
+				AC1D47811F96EF2F0043C317 /* QuestionDetailsViewController.swift in Sources */,
+				AC20ED261F940BF9009E8161 /* QuestionListViewController.swift in Sources */,
+				AC1D47831F96EF7D0043C317 /* QuestionDetailsViewModel.swift in Sources */,
+				AC9102D21F8C756000232D2F /* CornerRadiusView.swift in Sources */,
+				AC3500B41F9C42CC000129A4 /* StudentResultViewModel.swift in Sources */,
+				ACBF56BA1F92A37A001AE63F /* CategoryListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AC9102B71F8C033600232D2F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC9102B81F8C033600232D2F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC9102BF1F8C033600232D2F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC9102C01F8C033600232D2F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC9102C31F8C033600232D2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC9102C41F8C033600232D2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC9102C61F8C033600232D2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MUM-CareetTest-AdminPortal/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miehiar.MUM-CareetTest-AdminPortal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC9102C71F8C033600232D2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MUM-CareetTest-AdminPortal/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miehiar.MUM-CareetTest-AdminPortal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC9102AB1F8C033500232D2F /* Build configuration list for PBXProject "MUM-CareetTest-AdminPortal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC9102C31F8C033600232D2F /* Debug */,
+				AC9102C41F8C033600232D2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC9102C51F8C033600232D2F /* Build configuration list for PBXNativeTarget "MUM-CareetTest-AdminPortal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC9102C61F8C033600232D2F /* Debug */,
+				AC9102C71F8C033600232D2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AC9102BA1F8C033600232D2F /* MUM_CareetTest_AdminPortal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AC9102BB1F8C033600232D2F /* MUM_CareetTest_AdminPortal.xcdatamodel */,
+			);
+			currentVersion = AC9102BB1F8C033600232D2F /* MUM_CareetTest_AdminPortal.xcdatamodel */;
+			path = MUM_CareetTest_AdminPortal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AC9102A81F8C033500232D2F /* Project object */;
+}
