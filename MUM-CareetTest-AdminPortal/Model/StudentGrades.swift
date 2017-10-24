@@ -11,9 +11,10 @@ struct StudentGrades{
     var name : String
     var grade: String
     
-    init(json: [String: Any]){
-        let key = json.keys.first
-        self.name = key ?? "No Des"
-        self.grade = json[key!] as? String ?? "No Des"
+    init(json: (key: String, value: Any)){
+//        let key = json.keys.first
+        self.name = json.key as String
+//        self.grade = json[(key)!] as? String ?? "No Des"
+        self.grade = json.value as? String ?? "No Value"
     }
 }

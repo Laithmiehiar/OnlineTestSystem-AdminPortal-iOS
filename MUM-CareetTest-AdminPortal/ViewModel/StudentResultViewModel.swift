@@ -11,8 +11,8 @@ class studentResultViewModel: NSObject{
     @IBOutlet var webservice: webServiceClient!
     var studentRes: [StudentResultModel]?
     
-    func getStudentResult(studentId: Int ,complition: @escaping() -> Void) {
-        webservice.fetchStudentResult(studentId: studentId) { (result) in
+    func getStudentResult(assignmentId: Int ,complition: @escaping() -> Void) {
+        webservice.fetchStudentResult(assignmentId: assignmentId) { (result) in
             DispatchQueue.main.async {
                 self.studentRes = result ?? nil
                 complition()

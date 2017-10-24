@@ -222,7 +222,7 @@
                     <connections>
                         <outlet property="studentListViewModel" destination="Nih-Ir-b8F" id="fSM-ZZ-i4g"/>
                         <outlet property="tableview" destination="F32-iB-17W" id="qGo-7B-DMh"/>
-                        <segue destination="sM6-XV-15y" kind="show" identifier="studentInfo" animates="NO" id="ffO-1a-Zib"/>
+                        <segue destination="6Du-ng-u0a" kind="show" identifier="assignmentList" animates="NO" id="ogY-8f-3py"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rdD-x5-6p5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -321,7 +321,108 @@
                 </customObject>
                 <customObject id="ZG8-UH-nh3" customClass="webServiceClient" customModule="MUM_CareetTest_AdminPortal" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="5521" y="913"/>
+            <point key="canvasLocation" x="6175" y="913"/>
+        </scene>
+        <!--Assignment List View Controller-->
+        <scene sceneID="pph-Da-Ad7">
+            <objects>
+                <viewController id="6Du-ng-u0a" customClass="AssignmentListViewController" customModule="MUM_CareetTest_AdminPortal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p6h-Br-2OZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gXI-KK-wl3">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="assignmentListCell" rowHeight="90" id="ccb-va-KiT" customClass="AssignmentListCustomeCell" customModule="MUM_CareetTest_AdminPortal" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ccb-va-KiT" id="OCg-hx-21x">
+                                            <rect key="frame" x="0.0" y="0.0" width="328" height="89.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="t9Y-QV-y5R">
+                                                    <rect key="frame" x="1" y="10" width="326" height="57"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="l9a-W4-IMx">
+                                                            <rect key="frame" x="0.0" y="0.0" width="326" height="21"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assignment No:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2B4-ME-LqO">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="160.5" height="21"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="21" id="oOu-bT-CO6"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPB-IG-kan">
+                                                                    <rect key="frame" x="165.5" y="0.0" width="160.5" height="21"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bLS-5Y-Sxj">
+                                                            <rect key="frame" x="0.0" y="36" width="326" height="21"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Access Code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPr-mE-K4D">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="160.5" height="21"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="21" id="x8U-q5-th5"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMc-Df-kak">
+                                                                    <rect key="frame" x="165.5" y="0.0" width="160.5" height="21"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="t9Y-QV-y5R" firstAttribute="top" secondItem="OCg-hx-21x" secondAttribute="top" constant="10" id="0kr-F3-z8G"/>
+                                                <constraint firstItem="t9Y-QV-y5R" firstAttribute="leading" secondItem="OCg-hx-21x" secondAttribute="leading" constant="1" id="I7l-Cl-Zw3"/>
+                                                <constraint firstAttribute="trailing" secondItem="t9Y-QV-y5R" secondAttribute="trailing" constant="1" id="kOZ-hL-UfA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="accessCode" destination="mMc-Df-kak" id="zIB-eR-BUc"/>
+                                            <outlet property="assignmentNo" destination="iPB-IG-kan" id="VmF-mI-HVg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="6Du-ng-u0a" id="rnE-Ii-frY"/>
+                                    <outlet property="delegate" destination="6Du-ng-u0a" id="Ml5-Mb-qfC"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gXI-KK-wl3" firstAttribute="trailing" secondItem="Kh0-CE-93F" secondAttribute="trailing" id="0MX-YQ-aOp"/>
+                            <constraint firstItem="gXI-KK-wl3" firstAttribute="top" secondItem="Kh0-CE-93F" secondAttribute="top" id="1Nd-pM-F85"/>
+                            <constraint firstItem="gXI-KK-wl3" firstAttribute="leading" secondItem="Kh0-CE-93F" secondAttribute="leading" id="hfy-VK-3t2"/>
+                            <constraint firstItem="gXI-KK-wl3" firstAttribute="bottom" secondItem="Kh0-CE-93F" secondAttribute="bottom" id="wPF-Y0-aUY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kh0-CE-93F"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableview" destination="gXI-KK-wl3" id="16l-Ec-wXj"/>
+                        <segue destination="sM6-XV-15y" kind="show" identifier="studentInfo" animates="NO" id="lOa-du-Mnf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B0t-aB-EeB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5368.8000000000002" y="912.5937031484259"/>
         </scene>
         <!--Master-->
         <scene sceneID="YVR-eW-sy3">

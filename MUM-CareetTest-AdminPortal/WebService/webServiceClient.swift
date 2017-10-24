@@ -209,7 +209,7 @@ extension webServiceClient{
     
 }
 extension webServiceClient {
-    func fetchStudentResult(studentId: Int, completion: @escaping([StudentResultModel]?) -> Void) {
+    func fetchStudentResult(assignmentId: Int, completion: @escaping([StudentResultModel]?) -> Void) {
         guard let url = URL(string: BASE_URL2+studentResult) else {
             print("Error unwrapping URL")
             return
@@ -218,7 +218,7 @@ extension webServiceClient {
         print("url: \(url)")
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        request.httpBody = "studentid=\(studentId)".data(using: .utf8)
+        request.httpBody = "studentid=\(assignmentId)".data(using: .utf8)
         
         let session = URLSession.shared
         let dataTask = session.dataTask(with: request) { (data, response, error) in

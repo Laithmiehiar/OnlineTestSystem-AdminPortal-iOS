@@ -23,7 +23,13 @@ class StudentListViewController: UIViewController{
             }
         }
     }
-    
+    func alertDialogPopup(alertTitle: String, alertMessage: String, buttonTitle: String){
+        DispatchQueue.main.async {
+            let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: buttonTitle, style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
 }
 
 extension StudentListViewController : UITableViewDelegate, UITableViewDataSource{
@@ -42,14 +48,18 @@ extension StudentListViewController : UITableViewDelegate, UITableViewDataSource
         
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             let student = studentListViewModel.itemForDisplay(at: indexPath)
-             performSegue(withIdentifier: "studentInfo", sender: student)
+            if((student?.assignmentData.count)! > 0){
+             performSegue(withIdentifier: "assignmentList", sender: student)
+            }else{
+                alertDialogPopup(alertTitle: "Warning!", alertMessage: "No Assignment yet for this student", buttonTitle: "Ok")
+            }
             
         }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "studentInfo"){
+        if(segue.identifier == "assignmentList"){
             print(segue.identifier!)
-            let destinationVC = segue.destination as! StudentResultViewController
+            let destinationVC = segue.destination as! AssignmentListViewController
             destinationVC.student = sender as? Student
             
         }

@@ -22,6 +22,7 @@
 		AC597FAF1F9862B90048A97D /* SSRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC597FAE1F9862B90048A97D /* SSRadioButton.swift */; };
 		AC5FDA711F9E4E2200EC88DC /* StudentGrades.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5FDA701F9E4E2200EC88DC /* StudentGrades.swift */; };
 		AC5FDA731F9E5C3E00EC88DC /* StudentResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5FDA721F9E5C3E00EC88DC /* StudentResultCell.swift */; };
+		AC5FDA751F9F04F400EC88DC /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5FDA741F9F04F000EC88DC /* Assignment.swift */; };
 		AC9102B41F8C033600232D2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9102B31F8C033600232D2F /* AppDelegate.swift */; };
 		AC9102B61F8C033600232D2F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9102B51F8C033600232D2F /* LoginViewController.swift */; };
 		AC9102B91F8C033600232D2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9102B71F8C033600232D2F /* Main.storyboard */; };
@@ -39,6 +40,8 @@
 		ACBF56BE1F92A3AF001AE63F /* StudentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF56BD1F92A3AF001AE63F /* StudentListViewModel.swift */; };
 		ACBF56C01F92A3C0001AE63F /* CategoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF56BF1F92A3C0001AE63F /* CategoryListViewModel.swift */; };
 		ACBF56C41F93EF08001AE63F /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBF56C31F93EF08001AE63F /* Category.swift */; };
+		ACC0DE081F9F10B600250511 /* AssignmentListCustomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0DE071F9F10B600250511 /* AssignmentListCustomeCell.swift */; };
+		ACC0DE0A1F9F125E00250511 /* AssignmentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0DE091F9F125E00250511 /* AssignmentListViewController.swift */; };
 		ACD8DAD81F97E3DB009A9484 /* AddQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8DAD71F97E3DA009A9484 /* AddQuestionViewController.swift */; };
 		ACD8DADA1F97E447009A9484 /* AddQuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8DAD91F97E447009A9484 /* AddQuestionViewModel.swift */; };
 		ACFF5F981F99338900DAA8D5 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF5F971F99338900DAA8D5 /* Student.swift */; };
@@ -62,6 +65,7 @@
 		AC597FAE1F9862B90048A97D /* SSRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSRadioButton.swift; sourceTree = "<group>"; };
 		AC5FDA701F9E4E2200EC88DC /* StudentGrades.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentGrades.swift; sourceTree = "<group>"; };
 		AC5FDA721F9E5C3E00EC88DC /* StudentResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentResultCell.swift; sourceTree = "<group>"; };
+		AC5FDA741F9F04F000EC88DC /* Assignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
 		AC9102B01F8C033600232D2F /* MUM-CareetTest-AdminPortal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MUM-CareetTest-AdminPortal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9102B31F8C033600232D2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC9102B51F8C033600232D2F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 		ACBF56BD1F92A3AF001AE63F /* StudentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewModel.swift; sourceTree = "<group>"; };
 		ACBF56BF1F92A3C0001AE63F /* CategoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewModel.swift; sourceTree = "<group>"; };
 		ACBF56C31F93EF08001AE63F /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		ACC0DE071F9F10B600250511 /* AssignmentListCustomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentListCustomeCell.swift; sourceTree = "<group>"; };
+		ACC0DE091F9F125E00250511 /* AssignmentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentListViewController.swift; sourceTree = "<group>"; };
 		ACD8DAD71F97E3DA009A9484 /* AddQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionViewController.swift; sourceTree = "<group>"; };
 		ACD8DAD91F97E447009A9484 /* AddQuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionViewModel.swift; sourceTree = "<group>"; };
 		ACFF5F971F99338900DAA8D5 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
@@ -145,6 +151,7 @@
 				AC597FAE1F9862B90048A97D /* SSRadioButton.swift */,
 				ACFF5F991F996C1C00DAA8D5 /* AddNewStudentViewController.swift */,
 				AC3500B11F9C41C3000129A4 /* StudentResultViewController.swift */,
+				ACC0DE091F9F125E00250511 /* AssignmentListViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -177,6 +184,8 @@
 				AC3500B71F9C4A27000129A4 /* StudentResultModel.swift */,
 				AC5FDA701F9E4E2200EC88DC /* StudentGrades.swift */,
 				AC5FDA721F9E5C3E00EC88DC /* StudentResultCell.swift */,
+				AC5FDA741F9F04F000EC88DC /* Assignment.swift */,
+				ACC0DE071F9F10B600250511 /* AssignmentListCustomeCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -280,11 +289,13 @@
 				AC547C5D1F8D5B5500495EB3 /* SubCategory.swift in Sources */,
 				AC547C5F1F8D5F6700495EB3 /* Option.swift in Sources */,
 				AC3500B21F9C41C3000129A4 /* StudentResultViewController.swift in Sources */,
+				AC5FDA751F9F04F400EC88DC /* Assignment.swift in Sources */,
 				ACFF5F9A1F996C1D00DAA8D5 /* AddNewStudentViewController.swift in Sources */,
 				ACBF56C41F93EF08001AE63F /* Category.swift in Sources */,
 				AC9102D01F8C12A400232D2F /* FancyView.swift in Sources */,
 				ACBF56BE1F92A3AF001AE63F /* StudentListViewModel.swift in Sources */,
 				AC9102B41F8C033600232D2F /* AppDelegate.swift in Sources */,
+				ACC0DE0A1F9F125E00250511 /* AssignmentListViewController.swift in Sources */,
 				ACBF56C01F92A3C0001AE63F /* CategoryListViewModel.swift in Sources */,
 				AC9102BC1F8C033600232D2F /* MUM_CareetTest_AdminPortal.xcdatamodeld in Sources */,
 				ACFF5F981F99338900DAA8D5 /* Student.swift in Sources */,
@@ -294,6 +305,7 @@
 				ACBF56B61F90735A001AE63F /* MenuViewController.swift in Sources */,
 				ACFF5F9C1F996C3800DAA8D5 /* AddNewStudentViewModel.swift in Sources */,
 				ACBF56B41F8EAFE6001AE63F /* LoginViewModel.swift in Sources */,
+				ACC0DE081F9F10B600250511 /* AssignmentListCustomeCell.swift in Sources */,
 				AC5FDA711F9E4E2200EC88DC /* StudentGrades.swift in Sources */,
 				AC547C591F8D58E200495EB3 /* Question.swift in Sources */,
 				ACD8DAD81F97E3DB009A9484 /* AddQuestionViewController.swift in Sources */,

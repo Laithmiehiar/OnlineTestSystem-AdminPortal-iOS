@@ -10,13 +10,13 @@ import UIKit
 class StudentResultViewController: UIViewController{
     @IBOutlet var studentResultViewModel: studentResultViewModel!
     @IBOutlet weak var tableview: UITableView!
-    var student: Student!
+    var assignment: Assignment!
    
     override func viewDidLoad() {
         tableview.dataSource = self as UITableViewDataSource
         tableview.delegate = self as UITableViewDelegate
         
-        studentResultViewModel.getStudentResult(studentId: student.userId){
+        studentResultViewModel.getStudentResult(assignmentId: assignment.id){
             DispatchQueue.main.async {
                 self.tableview.reloadData()
             }

@@ -15,7 +15,7 @@ struct StudentResultModel{
     
     init(json: [String: Any]) {
         let temp = json["grades"] as? [[String:Any]] ?? [[:]]
-        for c in temp{
+        for c in temp[0]{
             self.grades.append(StudentGrades(json: c))
         }
         total = json["total"] as? String ?? ""
