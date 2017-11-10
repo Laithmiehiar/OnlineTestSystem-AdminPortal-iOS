@@ -13,21 +13,6 @@ class AddNewStudentViewModel: NSObject{
     var jobSearchStatus = ["Active", "InActive"];
     
     func pushData(studentInfo : [String: String?],completion: @escaping(Bool, Any?, Error?) -> Void){
-//        var json: [String: Any] = [:]
-//        json["accesCode"] = "ACCESS_CODE"
-//
-//        var jsonList: [[String: Any]] = []
-//
-//        for x in answers{
-//            var jsonAnswer: [String: Any] = [:]
-//            jsonAnswer["question"] = x.key
-//            jsonAnswer["ans"] = x.value
-//            jsonList.append(jsonAnswer)
-//        }
-//
-//
-//        json["resultList"] = jsonList
-        
         do {
             let jsonData = try JSONSerialization.data(withJSONObject: studentInfo, options: .prettyPrinted)
             // here "jsonData" is the dictionary encoded in JSON data
